@@ -1,0 +1,287 @@
+<!--$includetemplate$modules$skeleton.html$-->
+	<!--$beginput$title$-->Esigate - Webapp integration, Remote templating, Web accelerator<!--$endput$-->
+	<!--$beginput$main_content$-->
+	
+<!--$includetemplate$modules$header/header.html$-->
+	<!--$beginput$link.doc$-->
+		http://www.esigate.org/reference.html
+	<!--$endput$-->
+<!--$endincludetemplate$-->
+
+    <div class="container">
+
+
+	<section id="home">
+		
+<!--$includetemplate$modules$content/logo.html$-->
+		<!--$endincludetemplate$-->
+
+
+		<!--$includetemplate$modules$content/used-by.html$-->
+		<!--$endincludetemplate$-->
+
+		<!--$includetemplate$modules$content/top-features_en.html$--><!--$endincludetemplate$-->
+	
+
+	</section>
+	
+	<section id="features">
+		<div class="row row-gradient top-space5">
+			<div class="span12">
+
+				<h2>Features</h2>
+
+				<div class="row" id="features-integration">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> Server-side integration
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>esigate allows to combine web pages and HTML fragments produced by several applications. This is done server-side and at the HTML level. As a result, the end user gets a simple HTML page as if it was produced by a single application.
+						</p>
+							<div class="feature-integration-img"><img src="website/img/assemble1.png"/><span>+</span>
+							<img src="website/img/assemble2.png"/><span>+</span>
+							<img src="website/img/logo.png" width="50"/>
+							<span>=</span><img src="website/img/assemble3.png"/></div>
+						
+
+						<p>Instead of developing a single, large application, use several applications, sharing the same design and content : </p>
+
+						<p>A typical setup could be :</p>
+						<ul>
+							<li>Drupal (PHP-based CMS), used to manage the global design and content.</li>
+							<li>Struts2 (Java framework), used for custom developments.</li>
+						</ul>
+						
+						<p>With server-side integration, application and websites can be fully optimized for accessibility and search engines (SEO).
+					</p>
+					</div>
+				</div>
+
+				<div class="row feature-row" id="features-remote">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i>Shared remote templates
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>esigate let you use remove templates. This means that all main design elements (basic HTML content and structure, shared textual content, css, images, .. ) are not included in application but assembled on-the-fly for each user request. 
+							:</p>
+<div class="feature-integration-img"><img src="website/img/assemble1.png"/><span>&#8658;</span>
+							<img src="website/img/assemble4.png"/>
+</div>
+						<p>The benefits are :</p>
+						<ul>
+							<li>A same design can be used in several applications : graphical, textual or even layout changes are applyed in real time, without deployment or restart.</li>
+							<li>Template is hosted on an HTTP server and can be provided by a dynamic application as a content management system or a portal. These products often provides administration features for design and layout which can be used directly with esigate.</li>
+							<li>Better performances since applications render fewer HTML code and content. Shared content are stored in esigate cache and merged at high speed on each request.</li>
+
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="row feature-row" id="features-accelerator">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i>Web accelerator
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>esigate is both a proxy and a cache : </p>
+
+						<p>HTML content is cached according to HTTP directives returned by each URL. Caching can be forced globally or on specific urls by using extensions.</p>
+
+						<p>Embedded or distributed cache : each esigate instance can use its own cache or share a common cache using ehcache or memcached.</p>
+
+						<p>Background revalidation and reuse of stale content on error allows constant response times and failure-resistance.</p>
+
+
+						<p>Non-cacheable pages are usually composed of cacheable content and some dynamic content. Withg esigate applications can generate the dynamic part only (fast) and reuse all cacheable content (bloc-level cache).</p>
+					</div>
+				</div>
+
+
+				<div class="row feature-row" id="features-compatibility">
+					<div class="span3 offset1">
+						<h3>
+							<i class="icon-star"></i> Compatibility
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>esigate process HTML content transparently. As a result it is compatible with most framework, tools and web applications as long as they provide web interfaces (HTML or XML over HTTP).</p>
+
+						<p>esigate has been used successfully with :</p>
+						<ul>
+							<li>Languages : PHP, Java, ...</li>
+							<li>Frameworks : <a href="http://struts.apache.org/2.x/index.html">Struts2</a>, <a href="http://wicket.apache.org">Wicket</a>, <a href="http://www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html">JSF</a>, <a href="http://jquery.com">JQuery</a>, ...</li>
+							<li>Products : <a href="http://drupal.org">Drupal</a>, <a
+								href="http://ez.no">eZ publish</a>, <a href="http://www.jahia.com/cms/fr/home.html">Jahia</a>, <a href="https://www.varnish-cache.org">Varnish</a>, ...
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+
+				<div class="row feature-row" id="features-esi">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> ESI 1.0 and additions
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>
+							Esigate fully supports the <a
+								hre="http://www.w3.org/TR/esi-lang">ESI 1.0</a> W3C proposal.
+						</p>
+						<p>
+							Unique <a href="http://www.esigate.org/esi.html">additions
+								</a> improve ESI, allows its use on wider uses cases  :
+						</p>
+						<ul>
+							<li>Fragments and XPath support to securely extract parts of HTML pages.</li>
+							<li>Ability to replace fragments on inclusion, enabling shared template use.</li>
+							<li>Support for XSLT-transformed XML fragments.</li>
+							<li>Specific configuration for each backend (ttl, extensions, ...).</li>
+						</ul>
+
+					</div>
+				</div>
+
+
+				<div class="row feature-row" id="features-compatibility">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> Extensions and API
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>
+							esigate provides a JAVA <a
+								href="http://www.esigate.org/extensions.html">extension API</a>. Extentions can hook on the request lifecycle and change behavior according to you needs.
+						</p>
+						<p>
+							Extensions can also handle authentication. esigate comes with a native <a href="http://www.jasig.org/cas">CAS
+								SSO</a> extension.
+						</p>
+
+						<div  class="feature-integration-img"><img src="website/img/cas-logo.png" title="Logo CAS"/></div>
+
+
+						<p>esigate can also be embedded in applications and used for API to build fast and great applications.</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	
+	
+	
+
+<section id="project">
+	<div class="row row-gradient top-space5">
+		<div class="span12">
+		
+			<h2 >Project</h2>
+
+
+
+				<div class="row">
+					<div class="span3 offset1">
+					<div class="project-logo">
+						<img src="website/img/sflogo.gif" title="Sourceforge logo" alt="Sourceforge"/>
+					</div>
+						<p>
+							esigate is developed on Sourceforge. The <a
+								href="http://sourceforge.net/projects/webassembletool/">project home</a> provides sources and downloads access, mailing lists and project wiki.
+						</p>
+					</div>
+					
+					<div class="span3 ">
+						<div class="project-logo">
+							<img src="website/img/maven-logo.png" title="Maven logo" alt="Maven" />
+						</div>
+						<p>
+							esigate is build with Maven. For developers, the Maven site is available, with <a
+								href="http://www.esigate.org/project-info.html">project informations
+								</a> (project team, source repository, dependencies, ...) and <a
+								href="http://www.esigate.org/project-reports.html">reports</a>
+							(Javadoc, changelog, ...).
+						</p>
+					</div>
+
+					<div class="span3">
+						<div class="project-logo">
+							<img src="website/img/centralRepository_logo.png"
+								title="Maven central repository logo"
+								alt="Maven central repository" />
+						</div>
+						<p>
+
+
+							esigate is avalaible on the <a
+								href="http://search.maven.org/"> central</a> Maven repository. It can be easily added to an existing project by adding the right  <a
+								href="http://search.maven.org/#search%7Cga%7C1%7Cesigate">
+								esigate-* dependency</a>.
+						</p>
+					</div>
+
+				</div>
+
+
+				<h3>					Quick links:</h3> 
+				<p>
+					<a
+						href="http://sourceforge.net/apps/mantisbt/webassembletool/changelog_page.php">Changelog</a>
+					| <a
+						href="http://sourceforge.net/apps/mantisbt/webassembletool/roadmap_page.php">Roadmap</a> | <a
+						href="http://sourceforge.net/apps/mantisbt/webassembletool/view_all_bug_page.php">Bugs</a>
+					| <a
+						href="http://sourceforge.net/apps/mantisbt/webassembletool/bug_report_page.php">Report
+						a bug</a> (<i class="icon-lock"></i> requires a sourceforge account)</p>
+						
+						
+						<h3>Talk with us !</h3>
+						<p><i class="icon-envelope"></i> <a  href="mailto:webassembletool-users@lists.sourceforge.net">webassembletool-users@lists.sourceforge.net</a> : general discution, questions and answers.</p> 
+						<p><i class="icon-envelope"></i> <a  href="mailto:webassembletool-devel@lists.sourceforge.net">webassembletool-devel@lists.sourceforge.net</a> : mailing list on esigate development.</p>
+						 
+				<h3>Statistics by Ohloh:</h3>
+				<script type="text/javascript"
+					src="http://www.ohloh.net/p/9896/widgets/project_factoids_stats.js"></script>
+
+
+
+		</div>
+	</div>
+</section>
+
+<section id="support">
+	<div class="row row-gradient top-space">
+		<div class="span12">
+		
+			<!--$includetemplate$modules$content/support_en.html$-->
+				<!--$endincludetemplate$-->
+
+
+		</div>
+	</div>
+</section>
+
+	<!--$includetemplate$modules$footer/footer.html$--><!--$endincludetemplate$-->			
+    </div> <!-- /container -->
+
+
+	<!--$endput$-->
+<!--$endincludetemplate$-->
+	
+	
