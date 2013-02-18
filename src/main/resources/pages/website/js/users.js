@@ -47,6 +47,11 @@ var users = [{
 //		   "url": "http://www.ag2rlamondiale.fr",
 //		   "weight": Math.random()
 	}, {
+		"img": "manitou.png",
+		   "title": "Manitou Group",
+		   "url": "http://www.manitou-group.fr",
+		   "weight": Math.random()
+	}, {
 		"img": "nantes-metropole.png",
 		   "title": "Nantes Métropole",
 		   "url": "http://www.nantesmetropole.fr",
