@@ -56,6 +56,16 @@ var users = [{
 		   "title": "Nantes Métropole",
 		   "url": "http://www.nantesmetropole.fr",
 		   "weight": Math.random()
+	}, {
+		"img": "systalians.png",
+		   "title": "Systalians",
+		   "url": "http://www.systalians.com",
+		   "weight": Math.random()
+	}, {
+		"img": "reunica.png",
+		   "title": "Reunica",
+		   "url": "http://www.reunica.com",
+		   "weight": Math.random()
 	}];
 
 users.sort(function(a,b) { return parseFloat(a.weight) - parseFloat(b.weight) } );
