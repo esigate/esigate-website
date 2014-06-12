@@ -66,7 +66,12 @@ var users = [{
 		   "title": "Reunica",
 		   "url": "http://www.reunica.com",
 		   "weight": Math.random()
-	}];
+	}, {
+                "img": "jahia.png",
+                   "title": "Jahia",
+                   "url": "http://www.jahia.com",
+                   "weight": Math.random()
+        }];
 
 users.sort(function(a,b) { return parseFloat(a.weight) - parseFloat(b.weight) } );
 
