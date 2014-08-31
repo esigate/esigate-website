@@ -35,7 +35,7 @@
 				<version>1.0-beta-5</version>
 				<configuration>
 					<fromDir>target/generated-html/</fromDir>
-					<includes>*</includes>
+					<includes>**</includes>
 					<url>scp://shell.sourceforge.net/home/project-web/webassembletool/htdocs</url>
 					<serverId>esigate-site</serverId>
 				</configuration>
