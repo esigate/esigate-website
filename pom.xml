@@ -38,7 +38,6 @@
 					<includes>*</includes>
 					<url>scp://shell.sourceforge.net/home/project-web/webassembletool/htdocs</url>
 					<serverId>esigate-site</serverId>
-					<optimize>true</optimize>
 				</configuration>
 
 
