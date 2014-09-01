@@ -71,7 +71,22 @@ var users = [{
                    "title": "Jahia",
                    "url": "http://www.jahia.com",
                    "weight": Math.random()
-        }];
+     }, {
+         "img": "europcar.png",
+         "title": "Europcar",
+         "url": "http://www.europcar.com",
+         "weight": Math.random()
+     }, {
+    	    "img": "canson.png",
+    	    "title": "Canson",
+    	    "url": "http://www.canson.com",
+    	    "weight": Math.random()
+    	}, {
+    	    "img": "sogiphar.png",
+    	    "title": "Sogiphar",
+    	    "url": "http://www.pharmaciengiphar.com",
+    	    "weight": Math.random()
+    	}];
 
 users.sort(function(a,b) { return parseFloat(a.weight) - parseFloat(b.weight) } );
 
