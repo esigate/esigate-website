@@ -111,6 +111,7 @@ reference.html
 						<p>ESIGate puede combinar páginas web, o fragmentos HTML de
 							páginas web, de aplicaciones diferentes. Esto se realiza del lado
 							del servidor, directamente en HTML. Este montaje es completamente 
+<<<<<<< HEAD
 							transparente para el usuario el cual obtiene una simple página HTML 
 							como si fuera producida por una sola aplicación.</p>
 						<div class="feature-integration-img"><img src="website/img/assemble1.png"/><span>+</span>
@@ -384,6 +385,283 @@ reference.html
 						<p><i class="icon-envelope"></i> <a  href="mailto:webassembletool-devel@lists.sourceforge.net">webassembletool-devel@lists.sourceforge.net</a>: lista de correo para los desarrolladores ESIGate. (<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=webassembletool-devel">Archivo</a> | <a href="https://lists.sourceforge.net/lists/listinfo/webassembletool-devel">Suscribir</a>)</p>
 						 
 				<h3>Estadísticas por Ohloh:</h3>
+=======
+							transparente para el usuario quien obtiene una simple página HTML 
+							como si fuera producida por una sola aplicación.</p>
+						<div class="feature-integration-img"><img src="website/img/assemble1.png"/><span>+</span>
+							<img src="website/img/assemble2.png"/><span>+</span>
+							<img src="website/img/logo.png" width="50" alt="logo esigate"/>
+							<span>=</span><img src="website/img/assemble3.png"/></div>
+
+						<p>En lugar de desarrollar una aplicación única y grande,
+							ESIGate permite utilizar varias aplicaciones independientes,
+							incorporando datos desde otras aplicaciones y unificando la
+							interfaz gráfica.</p>
+
+						<p>Una configuración clásica podría ser :</p>
+						<ul>
+							<li>Drupal (CMS PHP), utilizado para gestionar el diseño
+								gráfico y el contenido editorial</li>
+							<li>Struts 2 (Java framework), utilizado para desarrollados
+								a medida</li>
+						</ul>
+
+						<p>La integración del lado del servidor permite también una
+							optimizacion de las aplicaciones y de los sitios web para la
+							accesibilidad y los motores de búsqueda (SEO).</p>
+					</div>
+				</div>
+
+				<div class="row feature-row" id="features-remote">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> Plantillas remotas compartidas
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>ESIGate le permite utilizar plantillas remotas. Esto
+							significa que todos los elementos de diseño (el contenido y la
+							estructura HTML básicos, el contenido textual compartido, css,
+							imágenes...) no estan incluidos directamente en sus aplicaciones
+							sino agregados sobre la marcha para cada solicitud del usuario.</p>
+						<div class="feature-integration-img"><img src="website/img/assemble1.png"/><span>&#8658;</span>
+							<img src="website/img/assemble4.png"/>
+</div>
+						<p>Este modo de funcionamiento tiene muchas ventajas :</p>
+						<ul>
+							<li>El mismo diseño gráfico puede ser compartido por varias
+								aplicaciones : los cambios del tema gráfico, del texto y de la
+								composición visual se tienen en cuenta en tiempo real, sin
+								despliegue o reinicio.</li>
+							<li>La plantilla está alojada en un servidor HTTP. Se puede
+								utilizar plantillas dinámicas mediante la sustitución de los
+								archivos estáticos con un sistema de gestión de contenidos (CMS)
+								o un portal. En este caso, disfrutara de las funciones
+								administrativas que incluyen estes sistemas.</li>
+							<li>Mejor rendimiento puesto que sus aplicaciones no tienen
+								que generar tampoco el código HTML y los contenidos básico :
+								sólo generan los datos con valor agregado. Los datos compartidos
+								y los datos externos se almacenan en caché por ESIGate y son
+								incorporados inmediatamente en cada solicitud.</li>
+
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="row feature-row" id="features-accelerator">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> Acelerador Web
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>ESIGate es un proxy y un caché ambos :</p>
+
+						<p>El contenido HTML se almacena en caché según las directivas
+							HTTP devueltas por cada URL. Es posible imponer el caché en
+							general o para URL especificas con el uso de extensiones.</p>
+
+						<p>Caché integrado o distribuido : cada instancia de Esigate
+							puede utilizar su propia caché o compartir una caché común
+							utilizando ehcache o memcached.</p>
+
+						<p>La revalidación en segundo plano y la reutilización de
+							contenidos desactualizados en caso de error permiten obtener
+							tiempos de respuesta constantes y una mejor resistencia al
+							fracaso.</p>
+
+
+						<p>Las paginas no almacenables en caché se componen
+							generalmente de contenidos almacenables en caché y de algunos
+							contenidos dinámicos. Con ESIGate, las aplicaciones pueden
+							generar solamente la parte dinámica y reutilizar todos los
+							contenidos almacenables en caché (caché de nivel de bloque).</p>
+
+					</div>
+				</div>
+
+
+				<div class="row feature-row" id="features-compatibility">
+					<div class="span3 offset1">
+						<h3>
+							<i class="icon-star"></i> Compatibilidad
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>ESIGate procesa el contenido HTML de forma transparente. De
+							esta manera, es compatible con la mayoría de los frameworks,
+							herramientas y aplicaciones web, mientras que provean interfaces
+							web (HTML o XML sobre HTTP).</p>
+
+						<p>ESIGate ha sido utilizado con éxito con :</p>
+						<ul>
+							<li>Lenguajes : PHP, Java...</li>
+							<li>Frameworks : <a
+								href="http://struts.apache.org/2.x/index.html" lang="en"
+								title="Framework Apache Struts 2">Struts2</a>, <a
+								href="http://wicket.apache.org/" lang="en"
+								title="Framework Apache Wicket">Wicket</a>, <a
+								href="http://www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html"
+								lang="en" title="Java Server Faces">JSF</a>, <a
+								href="http://jquery.com/" lang="en" title="JQuery">JQuery</a>...
+							</li>
+							<li>Productos : <a href="http://drupal.org/" lang="en"
+								title="CMS Drupal">Drupal</a>, <a href="http://ez.no/" lang="en"
+								title="CMS ZE Publish">eZ Publish</a>, <a
+								href="http://www.jahia.com" lang="en" title="CMS Jahia">Jahia</a>,
+								<a href="https://www.varnish-cache.org/" lang="en"
+								title="Cache Varnish">Varnish</a>...
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+
+				<div class="row feature-row" id="features-esi">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> ESI 1.0 y adiciónes
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>
+							ESIGate implementa completamente la propuesta W3C <a
+								hre="http://www.w3.org/TR/esi-lang" lang="en"
+								title="ESI Language Specification">ESI 1.0</a>.
+						</p>
+						<p>
+							<a href="http://www.esigate.org/reference.html#ESI_syntax"
+								lang="en" title="ESI sintaxis">Adiciones únicas</a> le permiten
+							utilizar ESI para desarrollar aplicaciones potentes con
+							facilidad, cuyos los contenidos provienen de varias fuentes :
+						</p>
+						<ul>
+							<li>Gestión de fragmentos y soporte de XPath para integrar
+								solamente partes de las páginas HTML.</li>
+							<li>Sustitución de fragmentos de páginas para permitir un
+								uso a través de plantillas.</li>
+							<li>Soporte de XSLT para formatear fragmentos XML.</li>
+							<li>Configuraciones específicas (ttl, extensiones...) segun
+								las fuentes de datos.</li>
+						</ul>
+
+
+					</div>
+				</div>
+
+
+				<div class="row feature-row" id="features-compatibility">
+					<div class="span3 offset1">
+						<h3>
+							<i class=" icon-star"></i> Extensiones y API
+						</h3>
+					</div>
+
+					<div class="span8">
+						<p>
+							ESIGate tiene un <a
+								href="http://www.esigate.org/reference.html#Extensions">mecanismo
+								de extensiones</a> desarrollado en Java. Las extensiones pueden
+							enganchar en el ciclo de vida de la solicitud y cambiar el
+							comportamiento en función de sus requisitos.
+						</p>
+						<p>
+							Las extensiones pueden también manejar la autenticación. ESIGate
+							incorpora una extension nativa para <a
+								href="http://www.jasig.org/cas">CAS SSO</a>.
+						</p>
+						<div class="feature-integration-img"><img src="website/img/cas-logo.png" title="Logo CAS"/></div>
+
+						<p>ESIGate se puede también integrar en sus aplicaciones y se
+							utiliza en forma de API para desarrollar aplicaciones estupendas
+							y rápidas.</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	
+
+	<section id="project">
+		<div class="row row-gradient top-space5">
+			<div class="span12">
+
+				<h2>Proyecto</h2>
+
+
+				<div class="row">
+					<div class="span3 offset1">
+					<div class="project-logo">
+						<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=209844&type=16" title="Sourceforge logo" alt="Sourceforge"/>
+					</div>
+						<p>
+							ESIGate está alojado en Sourceforge. En la
+							<a href="http://sourceforge.net/projects/webassembletool/">pagina
+								del proyecto</a> se encuentran el código fuente, el acceso para
+							descargar ESIGate, listas de correos y un wiki.
+						</p>
+					</div>
+					
+					<div class="span3 ">
+						<div class="project-logo">
+							<img src="website/img/maven-logo.png" title="Maven logo" alt="Maven" />
+						</div>
+						<p>
+							Maven se utiliza para construir el proyecto. Para los
+							desarrolladores, el sitio Maven está disponible con <a
+								href="http://www.esigate.org/project-info.html">informaciones
+								sobre el proyecto</a> (equipo de trabajo, repositorio de fuentes,
+							dependencias...) e <a
+								href="http://www.esigate.org/project-reports.html">informes</a>
+							(Javadoc, cambios...).
+						</p>
+					</div>
+
+					<div class="span3">
+						<div class="project-logo">
+							<img src="website/img/centralRepository_logo.png"
+								title="Maven central repository logo"
+								alt="Maven central repository" />
+						</div>
+						<p>
+							ESIGate esta disponible en el <a href="http://search.maven.org/">repositorio
+								central de Maven</a>. Puede ser facilmente agregado a un proyecto
+							existente con la <a
+								href="http://search.maven.org/#search%7Cga%7C1%7Cesigate">dependencia
+								esigate-*</a> adaptada. Los snapshots están disponibles en <a href="https://oss.sonatype.org/content/repositories/snapshots/">Sonatype OSS repositorio</a>.
+						</p>
+					</div>
+
+				</div>
+
+
+				<h3>					Enlaces rápidos :</h3> 
+				<p>
+				 <a
+						href="https://github.com/esigate/esigate/wiki">Wiki</a> |
+					<a
+						href="https://github.com/esigate/esigate/milestones?state=closed" title="versiones" lang="en">Versiones</a>
+					| <a
+						href="https://github.com/esigate/esigate/milestones?state=open" title="hoja de ruta" lang="en">Hoja de ruta</a> | <a
+						href="https://github.com/esigate/esigate/issues" title="errores" lang="en">Bugs</a>
+					| <a
+						href="https://github.com/esigate/esigate/issues/new" title="reportar un error" lang="en">Reportar un error</a> (<i class="icon-lock"></i> requiere una cuenta de GitHub) </p>
+						
+						
+						<h3>Hable con nosotros !</h3>
+						<p><i class="icon-envelope"></i> <a  href="mailto:webassembletool-users@lists.sourceforge.net">webassembletool-users@lists.sourceforge.net</a> : lista de correo para los usuarios : conversaciónes generales, preguntas... (<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=webassembletool-users">Archivo</a> | <a href="https://lists.sourceforge.net/lists/listinfo/webassembletool-users">Suscribir</a>)</p> 
+						<p><i class="icon-envelope"></i> <a  href="mailto:webassembletool-devel@lists.sourceforge.net">webassembletool-devel@lists.sourceforge.net</a> : lista de correo para los desarrolladores ESIGate. (<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=webassembletool-devel">Archivo</a> | <a href="https://lists.sourceforge.net/lists/listinfo/webassembletool-devel">Suscribir</a>)</p>
+						 
+				<h3>Estadísticas por Ohloh :</h3>
+>>>>>>> branch 'master' of https://github.com/fxbonnet/esigate-website.git
 				<script type="text/javascript"
 					src="http://www.ohloh.net/p/9896/widgets/project_factoids_stats.js"></script>
 
