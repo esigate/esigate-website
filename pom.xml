@@ -16,8 +16,9 @@
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-ssh</artifactId>
-				<version>3.2.0</version>
+				<version>1.0-beta-5</version>
 			</extension>
+
 		</extensions>
 		<plugins>
 			<plugin>
@@ -29,20 +30,17 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.7.1</version>
-			</plugin>
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>wagon-maven-plugin</artifactId>
-				<version>2.0.0</version>
+				<version>1.0-beta-5</version>
 				<configuration>
 					<fromDir>target/generated-html/</fromDir>
 					<includes>**</includes>
 					<url>scp://shell.sourceforge.net/home/project-web/webassembletool/htdocs</url>
 					<serverId>esigate-site</serverId>
 				</configuration>
+
+
 			</plugin>
 		</plugins>
 	</build>
